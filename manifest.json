@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "DamuMed AI Assistant",
+  "version": "1.2",
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [{
+    "matches": ["*://*.dmed.kz/*"],
+    "js": ["content.js"]
+  }],
+  "host_permissions": [
+    "https://health-data-merge--ramazant20.replit.app/*",
+    "https://api.openai.com/*"
+  ]
+}
