@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { font-family: sans-serif; width: 300px; padding: 15px; background: #f4f7fb; margin: 0; }
+    h3 { margin-top: 0; color: #333; }
+    .patient { background: white; padding: 10px; border-radius: 8px; margin-bottom: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); border-left: 4px solid #4CAF50; }
+    .status { font-size: 13px; font-weight: bold; margin-bottom: 15px; }
+    button { width: 100%; padding: 10px; background: #2196F3; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+    button:hover { background: #1976D2; }
+    .error { color: #d32f2f; background: #fdecea; padding: 8px; border-radius: 6px; font-size: 12px; margin-bottom: 10px;}
+    .empty { color: gray; text-align: center; font-size: 14px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <h3>👨‍⚕️ Приемы сегодня</h3>
+  <div id="status" class="status">Подключение...</div>
+  <div id="errorBox"></div>
+  <div id="list"></div>
+  <button id="refresh">🔄 Обновить список</button>
+  <script src="popup.js"></script>
+</body>
+</html>
